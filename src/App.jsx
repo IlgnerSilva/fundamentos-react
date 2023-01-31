@@ -1,11 +1,17 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import './styles.css';
+import { Post } from './Post'
+import { Header } from './components/Header';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1>Hello World</h1>
+    <>
+      <Header />
+      <Post 
+        author="Ilgner Silva"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel molestiae consectetur quam cupiditate recusandae illo veniam saepe maiores, nemo tempore! Nam suscipit maxime voluptates earum, quidem quia reiciendis harum!"
+        />
+    </>
   )
 }
-
 export default App
