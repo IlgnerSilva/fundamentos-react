@@ -1,9 +1,10 @@
 import { header } from './Header.module.css';
+import oMagoLogo from '../assets/omago-logo.png';
 
 export function Header (){
     return (
         <header className={header}>
-            <strong className={header}>O Mago</strong>
+            <a href='#'><img src={oMagoLogo} alt="Logotipo do mago" /></a>
         </header>
     );
 }
